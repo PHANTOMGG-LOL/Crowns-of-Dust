@@ -1,0 +1,248 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cod:stone_of_resolve"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_book_cover",
+              "title": "The Last Chronicle of Myrath",
+              "author": "PhantomGG",
+              "generation": 0
+            },
+            {
+              "function": "minecraft:set_written_book_pages",
+              "pages": [
+                "I found this record among the remaining writings of Myrath.\n\nIt was written by one of the councillors during the final days of the kingdom.",
+
+                "Unlike the other records, this one was not hidden.\n\nIt was left inside the council chamber.\n\nAs though the writer expected someone to find it.",
+
+                "THE COUNCILLOR'S RECORD\n\nValdren has finally arrived.\n\nThey brought everything they discovered.",
+
+                "Everything they saw in Eldoria.\n\nEverything they learned about Ashenreach.\n\nTheir spies had been watching the other kingdoms for years, but what they told us today was different.",
+
+                "They spoke of Eldoria.\n\nThey spoke of the disappearance.\n\nThey spoke of people returning from those lands who were no longer themselves.",
+
+                "They told us that something was there.\n\nSomething they could not understand.\n\nSomething far more dangerous than anything we had prepared for.",
+
+                "They believe Ashenreach is responsible.\n\nThey believe the power they found is connected to everything that happened.\n\nAnd now we know enough.",
+
+                "We cannot sit and wait.\n\nIf Ashenreach is allowed to continue...\n\nthere may be nothing left.",
+
+                "So we prepare for war.\n\nOur warriors have gathered.\n\nOur weapons are ready.\n\nValdren will stand with us.",
+
+                "Tomorrow, we march.",
+
+                "Something is wrong.\n\nThe day has come.\n\nThe armies are ready.\n\nThe weapons have been prepared.",
+
+                "But Valdren...\n\nis gone.\n\nNo message.\n\nNo warning.\n\nNothing.",
+
+                "We searched for them.\n\nTheir camps are empty.\n\nTheir people are gone.\n\nTheir spies never arrived.",
+
+                "It is the same thing that happened to Eldoria.\n\nWhatever took them...\n\nknows too much.",
+
+                "I asked the soldiers if anyone had seen them leave.\n\nNobody had.\n\nOne of the scouts said something strange.",
+
+                "He said there were footprints outside the camp.\n\nHundreds of them.\n\nAll leading toward the forest.\n\nNone leading back.",
+
+                "We followed them.\n\nThey stopped at the edge of the trees.\n\nThere was nothing beyond them.",
+
+                "No bodies.\n\nNo weapons.\n\nNo sign of a struggle.\n\nOnly one thing remained.",
+
+                "A piece of stone.\n\nIt carried the same symbol found in the old records.\n\nWe left it there.\n\nWe did not touch it.",
+
+                "Only Myrath and Ashenreach remain.\n\nThere is no turning back.",
+
+                "Our scouts report that Ashenreach has gathered their forces.\n\nThey are different now.\n\nEven from a distance, something about them seems wrong.",
+
+                "Their armour has changed.\n\nTheir weapons have changed.\n\nSome of them do not appear to breathe.",
+
+                "I asked the scouts if they were certain.\n\nThey were.\n\nOne of them refused to go back.",
+
+                "He said the soldiers were watching him.\n\nI told him soldiers watch the enemy.\n\nHe said they were not looking at him.",
+
+                "They were looking behind him.",
+
+                "The battle has begun.\n\nI have never seen anything like this.\n\nAshenreach has become something else.",
+
+                "Their soldiers fight with a power I cannot understand.\n\nOur warriors are falling.\n\nBut they refuse to stop.",
+
+                "They fight with everything they have.\n\nI should be with them.\n\nI should be fighting.",
+
+                "But I am afraid.\n\nSo I stayed behind.\n\nI can hear the battle from here.",
+
+                "Steel.\n\nFire.\n\nScreaming.\n\nThen silence.\n\nThen more screaming.",
+
+                "Something is wrong.\n\nThe soldiers are saying the same thing.\n\nThey say there is something on the battlefield.",
+
+                "Something that is not Ashenreach.\n\nSomething that is not Myrath.\n\nIt is simply...\n\nthere.",
+
+                "The battle has stopped.\n\nNobody knows why.\n\nAshenreach has stopped attacking.",
+
+                "Our warriors have stopped advancing.\n\nThey are all looking toward the centre of the battlefield.\n\nI cannot see what they are looking at.",
+
+                "There is smoke everywhere.\n\nOne of the soldiers came to the council chamber.\n\nHe was covered in blood.",
+
+                "Not his own.\n\nHe said the enemy had disappeared.\n\nI asked him where they went.",
+
+                "He said:\n\n\"They didn't.\"\n\nI asked what he meant.\n\nHe would not answer.",
+
+                "Then he asked me something.\n\n\"Did you see it?\"\n\nI told him no.\n\nHe began to cry.",
+
+                "There is something outside.\n\nI can hear footsteps.\n\nSlow.\n\nHeavy.",
+
+                "They stop outside the chamber.\n\nNobody speaks.\n\nNobody moves.\n\nThe door has not opened.",
+
+                "But there is a shadow beneath it.\n\nIt does not belong to anyone standing outside.\n\nIt is moving.",
+
+                "I have ordered everyone to remain silent.\n\nThe shadow has stopped.\n\nI think...\n\nit is listening.",
+
+                "The door is still closed.\n\nThe shadow is gone.\n\nWe waited for hours.\n\nNothing happened.",
+
+                "Then one of the warriors opened the door.\n\nThere was nobody there.\n\nOnly a mark on the ground.",
+
+                "The same symbol.\n\nAgain.\n\nAlways the same symbol.",
+
+                "I am beginning to understand.\n\nAshenreach did not create this.\n\nEldoria did not discover it.",
+
+                "Valdren did not uncover it.\n\nWe have only been following its trail.",
+
+                "Perhaps it was here long before us.\n\nPerhaps it was here before the kingdoms.\n\nPerhaps it was here before anyone remembers.",
+
+                "The battlefield is empty.\n\nAshenreach is gone.\n\nTheir soldiers.\n\nTheir king.\n\nEverything.",
+
+                "We searched the ruins.\n\nThere are no survivors.\n\nNo bodies.\n\nNo weapons.\n\nNothing.",
+
+                "Myrath is almost empty too.\n\nThe remaining warriors have begun leaving.\n\nThey believe there is nothing left to fight.",
+
+                "They are wrong.\n\nThere is still something here.\n\nI can feel it.",
+
+                "I do not know how else to describe it.\n\nIt feels as though the kingdom itself is being watched.",
+
+                "I found the old records tonight.\n\nThe ones the elders told us never to open.\n\nI opened them.",
+
+                "I wish I hadn't.\n\nThe oldest pages do not mention Ashenreach.\n\nOr Eldoria.\n\nOr Valdren.\n\nOr Myrath.",
+
+                "They speak of the people who lived here before all of us.\n\nThe people who built the first ruins.\n\nThe people whose names have been forgotten.",
+
+                "And they mention the same thing.\n\nThe same symbol.\n\nThe same warning.\n\nThe same...\n\npresence.",
+
+                "There is one line that has been written again and again.\n\nI have copied it below.",
+
+                "IT DOES NOT COME WHEN CALLED.\n\nIT COMES WHEN FOUND.",
+
+                "I understand now.\n\nThe kingdoms thought they were searching for power.",
+
+                "Ashenreach searched for it.\n\nEldoria searched for answers.\n\nValdren searched for the truth.\n\nMyrath searched for someone to blame.",
+
+                "But none of us were searching for the right thing.\n\nWe were searching for something that had already found us.",
+
+                "I can hear something outside again.\n\nThis time there are no footsteps.\n\nNo shadow.\n\nNothing.",
+
+                "Just silence.\n\nToo much silence.\n\nThe guards have stopped speaking.",
+
+                "I went to check on them.\n\nThey were standing in the courtyard.\n\nAll of them.\n\nLooking upward.",
+
+                "I asked what they were looking at.\n\nNobody answered.\n\nThen one of them pointed toward the ruins.",
+
+                "There was a light.\n\nI have seen it before.\n\nThe same light described in the old records.",
+
+                "The same light found beside the darkness.\n\nIt is here.\n\nAfter all this time...\n\nit is here.",
+
+                "If anyone finds this record...\n\ndo not search for the power.",
+
+                "Do not search for the ruins.\n\nDo not search for the thing beneath them.\n\nLeave this place.",
+
+                "Forget the names of the kingdoms.\n\nForget what happened here.",
+
+                "And whatever you do...\n\ndo not look for the Temple.",
+
+                "MY NOTES\n\nThe councillor never finished the record.\n\nThere are no more pages.",
+
+                "I searched through what remained of Myrath.\n\nBut there is almost nothing left.",
+
+                "The ruins are gone.\n\nThe houses.\n\nThe roads.\n\nThe walls.",
+
+                "Even the old stones I had spent years studying...\n\ngone.",
+
+                "In their place stands an arena.\n\nI do not know who built it.\n\nI do not know when it appeared.",
+
+                "I am certain it was not here before.\n\nI remember these ruins.\n\nI walked through them.\n\nI searched their houses.",
+
+                "I slept beneath their broken walls.\n\nNow there is nothing.\n\nOnly the arena.",
+
+                "And I am beginning to think the presence has been following me.",
+
+                "I found more records.\n\nMore than I have written here.\n\nFar more.",
+
+                "They speak of Ashenreach.\n\nOne line was repeated several times:",
+
+                "\"We wanted power. We found something that wanted us.\"",
+
+                "They speak of Eldoria too.\n\nOne of the elder's notes reads:",
+
+                "\"Sometimes, the more knowledge we gain, the less we understand.\"",
+
+                "Another says:\n\n\"Perhaps some knowledge is not meant to be known.\"",
+
+                "There are records of Valdren.\n\nRecords of their spies.\n\nTheir warnings.\n\nTheir attempts to understand what was happening.",
+
+                "And records of Myrath.\n\nTheir final battles.\n\nTheir final days.\n\nTheir final mistake.",
+
+                "I have not copied everything.\n\nI do not think I should.\n\nSome of the records contain things I cannot explain.",
+
+                "Some names appear where no names should.\n\nSome pages describe places I have never visited.",
+
+                "Yet I recognize them.\n\nI have seen them.\n\nI have walked through them.",
+
+                "There is something else.\n\nThe records do not end with the kingdoms.\n\nThey continue.",
+
+                "Someone kept writing.\n\nLong after Ashenreach disappeared.\n\nLong after Eldoria went silent.",
+
+                "Long after Valdren and Myrath were gone.\n\nI do not know who wrote them.\n\nI do not know how they survived.",
+
+                "And I do not know why they seem to be describing things that have not happened yet.",
+
+                "I found one page with only a single sentence.",
+
+                "\"He is getting closer.\"",
+
+                "I do not know who he is.\n\nBut I have stopped searching for the answer.\n\nFor now.",
+
+                "There is one place I need to see.\n\nThe Temple of God.",
+
+                "The councillor only wrote a few words about it.\n\nNothing that explains what it is.",
+
+                "But if these arenas are really testing whoever enters them...\n\nthen perhaps there is a reason they still remain.",
+
+                "Perhaps the kingdoms were not destroyed simply because they were greedy.\n\nPerhaps the arenas were not built as memorials.",
+
+                "Perhaps they were built for a purpose.",
+
+                "I have spent years searching for the truth.\n\nI have followed the ruins.\n\nThe records.\n\nThe symbols.\n\nThe kingdoms.",
+
+                "And now...\n\nI know where I am going next.",
+
+                "The Temple of God."
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

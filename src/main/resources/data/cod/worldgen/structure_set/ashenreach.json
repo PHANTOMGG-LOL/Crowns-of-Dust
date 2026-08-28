@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "cod:ashenreach",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 18374621,
+    "spacing": 900,
+    "separation": 600,
+    "spread_type": "triangular"
+  }
+}

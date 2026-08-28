@@ -1,0 +1,22 @@
+{
+  "entity.cod.kings_will": "The King's Will",
+  "entity.cod.all_seeing_eye": "All Seeing Eye",
+  "entity.cod.oathbound": "The Oathbound",
+  "entity.cod.last_monarch": "The Last Monarch",
+  "entity.cod.herobrine": "Herobrine",
+  "entity.cod.null": "Null",
+
+  "item.cod.stone_of_valor": "Stone of Valor",
+  "item.cod.stone_of_wisdom": "Stone of Wisdom",
+  "item.cod.stone_of_unity": "Stone of Unity",
+  "item.cod.stone_of_resolve": "Stone of Resolve",
+
+  "item.cod.core": "The Core",
+
+  "block.cod.pedestal": "Pedestal",
+
+  "item.cod.destiny_compass": "Destiny Compass",
+
+  "item.cod.herobrine_legacy": "Herobrine's Legacy",
+  "item.cod.null_silence": "Null's Silence"
+}

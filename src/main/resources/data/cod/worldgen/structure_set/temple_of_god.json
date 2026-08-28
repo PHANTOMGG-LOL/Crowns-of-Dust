@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "cod:temple_of_god",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 83920147,
+    "spacing": 2200,
+    "separation": 2000,
+    "spread_type": "triangular"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cod:stone_of_wisdom"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_book_cover",
+              "title": "The Eldorian Records",
+              "author": "PhantomGG",
+              "generation": 0
+            },
+            {
+              "function": "minecraft:set_written_book_pages",
+              "pages": [
+                "I found this among the remaining records of Eldoria.\n\nIt was kept with the writings of the elders.\n\nMost of the pages were damaged beyond reading, but this one survived almost completely.",
+
+                "It was written near the end.\n\nI do not know the name of the elder who wrote it.\n\nThere was no name left.",
+
+                "Before the record begins, there is one thing worth knowing about Eldoria.\n\nThey were scholars.\n\nThey studied everything.",
+
+                "Every battle.\n\nEvery discovery.\n\nEvery strange object brought back from the other kingdoms.\n\nThey collected records from every civilization they could reach.",
+
+                "They documented everything.\n\nAnd yet...\n\neven they were afraid of what Ashenreach had discovered.",
+
+                "THE ELDER'S RECORD\n\nWe knew.\n\nLong before Ashenreach began searching for these powers, we knew they existed.",
+
+                "We had seen the signs.\n\nWe had found things that could not be explained.\n\nFor years, we kept our findings within the council.",
+
+                "We were afraid that if the other kingdoms learned of these powers, they would try to disturb them.\n\nAnd we were right to be afraid.",
+
+                "Ashenreach has gone too far.\n\nTheir greed has brought them to something they do not understand.\n\nThey believe they have found power.",
+
+                "They do not know what they have found.\n\nWe have studied their records.\n\nTheir discoveries.\n\nThe objects they brought back.",
+
+                "Everything we could recover.\n\nAnd the more we learned...\n\nthe worse it became.",
+
+                "There is something here far older than the kingdoms.\n\nSomething that does not seem to follow the rules we understand.",
+
+                "We cannot agree on what it is.\n\nSome believe it can be understood.\n\nOthers believe it should be left alone.",
+
+                "Some believe we should destroy everything connected to it.\n\nBut there is one thing we all agree upon.",
+
+                "We should never have searched this far.",
+
+                "We began looking for answers.\n\nWe searched through everything.\n\nOld ruins.\n\nForgotten places.\n\nAncient records.",
+
+                "Every piece of evidence we could find.\n\nWe thought that if we knew enough...\n\nwe could understand what Ashenreach had discovered.",
+
+                "But now I fear we made the same mistake.\n\nWe kept searching.",
+
+                "We found records older than Ashenreach.\n\nOlder than Eldoria.\n\nOlder than any kingdom known to us.",
+
+                "The same symbols appear throughout them.\n\nAt first, we believed they were simply marks left by an ancient people.",
+
+                "We were wrong.\n\nThey appear beside the same warnings.\n\nAgain.\n\nAnd again.\n\nAnd again.",
+
+                "We have found references to something beneath the ruins.\n\nSomething that was here before us.\n\nBefore them.\n\nBefore all of us.",
+
+                "I asked the council why nobody had recorded this before.\n\nThey had no answer.\n\nThen we found another record.",
+
+                "It contained a single sentence.",
+
+                "DO NOT LET IT KNOW THAT YOU KNOW.",
+
+                "I thought it was a warning.\n\nThe others laughed.\n\nThey no longer are.",
+
+                "Something has changed.\n\nThe scholars are becoming afraid.\n\nSome refuse to enter the lower archives.",
+
+                "Others claim they hear footsteps when the halls are empty.\n\nYesterday, I found one of the researchers staring at the wall.",
+
+                "I asked what he was doing.\n\nHe told me he was listening.\n\nI asked what he could hear.",
+
+                "He said...\n\n\"Nothing.\"\n\nThen he asked me why it was breathing.",
+
+                "I heard nothing.\n\nI still hear nothing.\n\nBut I have moved my room.",
+
+                "I do not want to sleep near the archives anymore.",
+
+                "We continued our research.\n\nThat was our mistake.",
+
+                "We found the place.\n\nIt was beneath the oldest part of the ruins.\n\nThere was no door.\n\nNo entrance.",
+
+                "Only a staircase.\n\nIt had been buried deliberately.\n\nWe uncovered it.\n\nI wish we had not.",
+
+                "The symbols were everywhere.\n\nThe same symbols from the old records.\n\nThe same symbols we found beneath Ashenreach.",
+
+                "At the bottom was a chamber.\n\nEmpty.\n\nAlmost.",
+
+                "There was something in the centre.\n\nA mark carved into the floor.\n\nWe did not recognize it.",
+
+                "Then one of the scholars said something that made everyone stop.\n\nHe had seen the symbol before.",
+
+                "Not in a book.\n\nNot on a ruin.\n\nHe had seen it...\n\nin his dreams.",
+
+                "We have stopped searching.\n\nThe council has ordered the chamber sealed.\n\nThree scholars have disappeared.",
+
+                "Nobody knows where they went.\n\nTheir rooms were untouched.\n\nTheir books were left open.\n\nTheir notes were still on the tables.",
+
+                "But they are gone.\n\nWe searched the kingdom.\n\nNothing.",
+
+                "Tonight, another scholar came to me.\n\nHe said he knows what happened to them.\n\nI asked him how.",
+
+                "He would not answer.\n\nHe only said:\n\n\"It knows we are here.\"",
+
+                "I asked him what he meant.\n\nHe looked at me for a long time.\n\nThen he asked me something.",
+
+                "\"Did you see it?\"\n\nI told him no.\n\nHe smiled.\n\nI do not know why.",
+
+                "We need to leave.\n\nI can hear them outside.\n\nThey are saying something has changed.",
+
+                "The others are frightened.\n\nSomeone has opened the sealed chamber.\n\nI did not do it.",
+
+                "The council says nobody did.\n\nBut the door is open.",
+
+                "There is something on the other side.\n\nI cannot see it.\n\nBut I can hear—",
+
+                "Wait.\n\nWhat is that?",
+
+                "...",
+
+                "No.\n\nNo, no...\n\nI understand now.",
+
+                "It was never inside the chamber.\n\nWe were.",
+
+                "MY NOTES\n\nThat was the final part of the record.\n\nThe writing becomes almost impossible to read near the end.",
+
+                "The elders never finished their account.\n\nI searched for them.\n\nI found their laboratories.\n\nTheir books.\n\nTheir unfinished studies.",
+
+                "Everything they had spent years working on.\n\nBut I found no elders.\n\nNo bodies.\n\nNo explanation.\n\nNothing.",
+
+                "Only empty rooms.\n\nAnd the chamber.",
+
+                "The entrance was sealed when I arrived.\n\nI did not open it.\n\nI did not even touch it.",
+
+                "Yet there was writing on the stone.\n\nFresh writing.",
+
+                "The same words appeared three times.",
+
+                "IT KNOWS.",
+
+                "I left immediately.\n\nI have not returned.",
+
+                "There is something else I cannot explain.\n\nThe symbol I found beneath Ashenreach...\n\nis here too.",
+
+                "I once believed Ashenreach had discovered something that caused the fall of the kingdoms.\n\nNow I am beginning to think they merely found something that was already here.",
+
+                "And Eldoria...\n\nEldoria found out what it was.",
+
+                "Perhaps knowledge really does have a price.\n\nPerhaps the elders paid it in full.",
+
+                "Or perhaps...\n\nthey are still somewhere beneath those ruins.",
+
+                "Waiting for someone to find them."
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

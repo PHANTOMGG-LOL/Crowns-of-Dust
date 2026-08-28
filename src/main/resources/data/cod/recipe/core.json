@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "OGO",
+    "GTG",
+    "OGO"
+  ],
+  "key": {
+    "O": "minecraft:obsidian",
+    "G": "minecraft:black_stained_glass",
+    "T": "minecraft:totem_of_undying"
+  },
+  "result": {
+    "id": "cod:core",
+    "count": 1
+  },
+  "show_notification": false
+}

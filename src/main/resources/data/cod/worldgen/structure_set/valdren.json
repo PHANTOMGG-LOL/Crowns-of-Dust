@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "cod:valdren",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 47291387,
+    "spacing": 900,
+    "separation": 600,
+    "spread_type": "triangular"
+  }
+}

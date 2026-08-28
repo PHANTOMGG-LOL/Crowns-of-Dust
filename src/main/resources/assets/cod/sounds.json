@@ -1,0 +1,82 @@
+{
+  "kings_will.idle": {
+    "sounds": [
+      "cod:kings_will/king_idle"
+    ]
+  },
+
+  "kings_will.walk": {
+    "sounds": [
+      "cod:kings_will/king_walk"
+    ]
+  },
+
+  "all_seeing_eye.idle": {
+    "sounds": [
+      "cod:all_seeing_eye/eye_idle"
+    ]
+  },
+
+  "all_seeing_eye.walk": {
+    "sounds": [
+      "cod:all_seeing_eye/eye_walk"
+    ]
+  },
+
+  "oathbound.idle": {
+    "sounds": [
+      "cod:oathbound/oath_idle"
+    ]
+  },
+
+  "oathbound.walk": {
+    "sounds": [
+      "cod:oathbound/oath_walk"
+    ]
+  },
+
+  "last_monarch.idle": {
+    "sounds": [
+      "cod:last_monarch/monarch_idle"
+    ]
+  },
+
+  "last_monarch.walk": {
+    "sounds": [
+      "cod:last_monarch/monarch_walk"
+    ]
+  },
+
+  "boss_awakening": {
+    "sounds": [
+      {
+        "name": "cod:boss_awakening",
+        "stream": true
+      }
+    ]
+  },
+
+  "whisper": {
+    "sounds": [
+      "cod:whisper"
+    ]
+  },
+
+  "encounter.walking": {
+    "sounds": [
+      "cod:walking"
+    ]
+  },
+
+  "encounter.running": {
+    "sounds": [
+      "cod:running"
+    ]
+  },
+
+  "heart_beat": {
+    "sounds": [
+      "cod:heart_beat"
+    ]
+  }
+}

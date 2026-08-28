@@ -1,0 +1,238 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"misc.idle": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, -10]
+						},
+						"1.0": {
+							"vector": [0, 0, 22.5]
+						},
+						"1.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"bone3": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, 6, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [7.5, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cod:kings_will.idle"
+				}
+			}
+		},
+		"move.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, -7.5]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 20]
+						}
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, 0, -7.5]
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cod:kings_will.walk"
+				}
+			}
+		},
+		"attack.slash": {
+			"loop": true,
+			"animation_length": 2.5,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [-7.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [-77.5, 0, 0]
+						},
+						"2.0": {
+							"vector": [-102.5, 0, 0]
+						},
+						"2.5": {
+							"vector": [-50, 0, 0]
+						}
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [0, 90, 0]
+						},
+						"1.25": {
+							"vector": [0, 90, -92.5]
+						},
+						"2.25": {
+							"vector": [0, 90, -120]
+						},
+						"2.5": {
+							"vector": [0, 90, -50]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 7, 0]
+						},
+						"0.5833": {
+							"vector": [0, 1.56, 0]
+						},
+						"1.0": {
+							"vector": [0, 12, 0]
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.75": {
+					"effect": "king_slash_1.mp3"
+				},
+				"2.1667": {
+					"effect": "king_slash.mp3"
+				}
+			}
+		},
+		"attack.spin": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [10, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [10, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.25": {
+							"vector": [10, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, 0]
+						},
+						"1.75": {
+							"vector": [10, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 45, 0]
+						},
+						"0.5": {
+							"vector": [0, 90, 0]
+						},
+						"0.75": {
+							"vector": [0, 135, 0]
+						},
+						"1.0": {
+							"vector": [0, 180, 0]
+						},
+						"1.25": {
+							"vector": [0, 225, 0]
+						},
+						"1.5": {
+							"vector": [0, 270, 0]
+						},
+						"1.75": {
+							"vector": [0, 315, 0]
+						},
+						"2.0": {
+							"vector": [0, 360, 0]
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.25": {
+					"effect": "cod:kings_will.spin"
+				}
+			}
+		}
+	}
+}

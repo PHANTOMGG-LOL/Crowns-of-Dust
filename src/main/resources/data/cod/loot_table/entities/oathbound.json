@@ -1,0 +1,198 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cod:stone_of_unity"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_book_cover",
+              "title": "The Valdren Records",
+              "author": "PhantomGG",
+              "generation": 0
+            },
+            {
+              "function": "minecraft:set_written_book_pages",
+              "pages": [
+                "I found this book far from the ruins of Valdren.\n\nUnlike the records of Ashenreach and Eldoria, this one was not written by a king or an elder.\n\nIt belonged to someone who worked in the shadows.",
+
+                "A spy.\n\nThe book was hidden beneath the floor of a ruined house.\n\nI almost missed it.",
+
+                "Most of the pages contain names, dates, locations, and information about the other kingdoms.\n\nBut the final pages are different.",
+
+                "They were written in a hurry.\n\nWhatever happened to this person...\n\nthey knew they were running out of time.",
+
+                "THE SPY'S RECORD\n\nValdren has never been the strongest kingdom.\n\nWe do not have Ashenreach's armies.\n\nWe do not have Eldoria's scholars.",
+
+                "We do not have Myrath's warriors.\n\nSo we learned to survive differently.\n\nWe listen.\n\nWe watch.\n\nWe collect.",
+
+                "Information is our greatest weapon.\n\nOur people travel between kingdoms, taking whatever work allows us to get close enough to listen.",
+
+                "Merchants.\n\nGuards.\n\nTravellers.\n\nSometimes even soldiers.",
+
+                "We hear things that kings would never say in front of their people.\n\nWe see things that armies never notice.\n\nAnd when we return...\n\nwe bring everything home.",
+
+                "Ashenreach pays for military information.\n\nEldoria pays for discoveries.\n\nMyrath pays for information about enemy movements.",
+
+                "Everyone wants to know something.\n\nAnd Valdren knows how to find it.\n\nFor years, this was how we survived.",
+
+                "Until we started looking into Eldoria.",
+
+                "At first, it was simple.\n\nWe wanted information.\n\nWe wanted to know what their scholars were studying.\n\nWhat they had discovered.",
+
+                "Why they had suddenly become so secretive.\n\nThen our people started disappearing.",
+
+                "The first spy never returned.\n\nWe assumed he had been caught.\n\nThe second returned.\n\nBut he was not the same.",
+
+                "He could barely speak.\n\nHe kept asking us the same question.",
+
+                "\"Did you see it?\"",
+
+                "We did not know what he meant.\n\nWe asked him what he had seen.\n\nHe would not tell us.",
+
+                "He only kept talking about Eldoria.\n\nHe said the scholars had found something.\n\nSomething far more dangerous than anything we had ever reported.",
+
+                "He said it was beneath the ruins.\n\nHe said they had opened something.\n\nThen he stopped speaking.",
+
+                "Three days later...\n\nhe disappeared.\n\nHis room was locked from the inside.",
+
+                "There was nothing wrong with the door.\n\nNothing broken.\n\nNothing stolen.\n\nHe was simply gone.",
+
+                "Eldoria has gone silent.\n\nNo messages.\n\nNo merchants.\n\nNo scholars.\n\nNothing.",
+
+                "We sent another spy.\n\nHe returned after six days.\n\nHe was terrified.\n\nHe said the city was empty.",
+
+                "Not destroyed.\n\nEmpty.\n\nThe laboratories were still intact.\n\nBooks were lying open.\n\nExperiments were still running.",
+
+                "Meals had been left on tables.\n\nBut there was nobody there.",
+
+                "He said he found the council chamber.\n\nThere were twelve chairs.\n\nEleven were empty.\n\nThe twelfth had blood on it.",
+
+                "He refused to tell us whose.\n\nThen he said something strange.\n\nHe said there was writing on the wall.",
+
+                "Three words.",
+
+                "IT KNOWS.",
+
+                "I asked him what it meant.\n\nHe looked at me.\n\nThen he asked:",
+
+                "\"Did you see it?\"",
+
+                "I told him no.\n\nHe said:\n\n\"Good.\"\n\nWe have sent no one else.",
+
+                "Whatever happened to Eldoria is still there.\n\nI know this because our people have started seeing things near the border.",
+
+                "Figures in places where nobody should be.\n\nLights beneath the ground.\n\nVoices coming from abandoned buildings.",
+
+                "Sometimes footsteps.\n\nSometimes whispers.\n\nAlways at night.",
+
+                "And every time someone investigates...\n\nnothing is there.",
+
+                "I have spent my entire life collecting secrets.\n\nI have never been afraid of them.",
+
+                "But this is different.\n\nThis is something we cannot watch.\n\nSomething we cannot understand.\n\nSomething we cannot sell.",
+
+                "For the first time...\n\nValdren has information that nobody wants to hear.",
+
+                "We found another record.\n\nIt was older than Eldoria.\n\nOlder than Ashenreach.\n\nOlder than any kingdom.",
+
+                "The symbols on it are the same symbols we found beneath the ruins.\n\nI have seen them before.",
+
+                "So has our council.\n\nWe were told never to speak of them.",
+
+                "I asked why.\n\nNobody answered.\n\nI asked again.\n\nStill nothing.",
+
+                "Then the oldest member of the council told me something.\n\nHe said:",
+
+                "\"Some things are better left forgotten.\"",
+
+                "I asked him how he knew.\n\nHe told me his grandfather had said the same thing.",
+
+                "And his grandfather had learned it from someone else.\n\nThe warning has been passed down for generations.",
+
+                "But nobody remembers who started it.",
+
+                "Tonight I found something in my room.\n\nI do not know how it got there.\n\nA piece of stone.",
+
+                "The same kind found beneath Eldoria.\n\nThere is a symbol carved into it.\n\nI have never seen this symbol before.",
+
+                "But I recognize it.\n\nI saw it in the old records.\n\nI thought the records were wrong.",
+
+                "They were not.",
+
+                "There is another name written beneath it.\n\nI cannot read the language.\n\nBut I have copied it here.",
+
+                "Perhaps someone in Myrath will know.",
+
+                "We believe Ashenreach is responsible.\n\nThey were the first to search for powers they did not understand.\n\nThey were the first to become obsessed with them.",
+
+                "And now Eldoria is gone.\n\nWe cannot wait for the same thing to happen to us.",
+
+                "We need warriors.\n\nWe need someone who can fight.\n\nSo we are going to Myrath.",
+
+                "We will tell them everything.\n\nEvery secret.\n\nEvery report.\n\nEvery piece of information we have gathered.",
+
+                "Maybe they will believe us.\n\nMaybe they won't.\n\nBut we have no other choice.",
+
+                "If what we saw in Eldoria is only the beginning...\n\nthen this is no longer about Valdren.",
+
+                "Or Eldoria.\n\nOr Ashenreach.",
+
+                "Something far more dangerous is coming.",
+
+                "And this time...\n\nthere may be nowhere left to hide.",
+
+                "MY NOTES\n\nThe final pages were written by someone else.\n\nThe handwriting is different.\n\nOlder.",
+
+                "The spy's record ends before they ever reach Myrath.\n\nI found no evidence that the journey was completed.",
+
+                "But there is something strange.\n\nThe stone mentioned in the record was still inside the book.",
+
+                "I compared its markings with the symbols I found beneath Ashenreach and Eldoria.\n\nThey match.\n\nExactly.",
+
+                "There is one more thing.\n\nThe name beneath the symbol...\n\nI have seen it before.",
+
+                "Not in a book.\n\nNot on a ruin.",
+
+                "It was carved into a wall near the arena.",
+
+                "I did not notice it at first.\n\nSomeone had tried to remove it.",
+
+                "They had scratched over the letters until the stone was almost destroyed.\n\nBut the name is still there.",
+
+                "I copied it before leaving.\n\nI do not know what it means.",
+
+                "I only know one thing.\n\nValdren believed Ashenreach caused everything.",
+
+                "Eldoria believed they had discovered something ancient.\n\nAnd the spy believed something was coming.",
+
+                "Perhaps all three were wrong.\n\nOr perhaps...\n\nthey were all looking at different pieces of the same thing.",
+
+                "There is only one kingdom left whose records I have not found.",
+
+                "Myrath.",
+
+                "If the final records exist...\n\nthey may contain the answer.",
+
+                "Or they may tell me why there is no answer left to find."
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

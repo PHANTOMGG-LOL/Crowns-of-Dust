@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cod:stone_of_valor"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_book_cover",
+              "title": "The Ashen Chronicle",
+              "author": "PhantomGG",
+              "generation": 0
+            },
+            {
+              "function": "minecraft:set_written_book_pages",
+              "pages": [
+                "I found this book among the ruins of Ashenreach.\n\nThe pages are damaged.\n\nSome are missing.\n\nOthers have been ruined by time, fire, or something I cannot identify.",
+
+                "But the final entries remain.\n\nThey were written by the King himself.\n\nI know this because his name appears beneath the first entry.",
+
+                "I will record his words as they were written.",
+
+                "THE KING'S RECORD\n\nWe were greedy.\n\nThat is the truth I can no longer deny.",
+
+                "We saw the wealth of this land and convinced ourselves that we deserved all of it.\n\nWe took.\n\nWe conquered.\n\nWe looted.\n\nWe destroyed.",
+
+                "Every victory made us want another.\n\nAnd somewhere along the way...\n\nwe forgot why we were fighting in the first place.",
+
+                "We were once people.\n\nWe lived together.\n\nWe shared this land.\n\nNow we fight our own kind for things that will not matter when we are gone.",
+
+                "But I fear we have gone too far.\n\nDuring our search, we found something.\n\nSomething I cannot explain.",
+
+                "There was a light.\n\nIt was calm.\n\nIt felt peaceful.\n\nAnd beside it...\n\nthere was darkness.",
+
+                "The darkness felt different.\n\nIt felt powerful.\n\nAlmost as if it was waiting for us.",
+
+                "My people wanted the darkness.\n\nThey believed its power would make us unstoppable.\n\nI allowed them to take it.\n\nPerhaps that was my greatest mistake.",
+
+                "Since then, things have changed.\n\nOur soldiers have become stronger.\n\nBut something about them is different.",
+
+                "Some say they feel watched.\n\nOthers refuse to speak about what they have seen.\n\nOne soldier returned from the lower chambers yesterday.",
+
+                "He would not tell us what happened.\n\nHe only asked that we seal the doors.\n\nWe did not.",
+
+                "The council believes the power belongs to us now.\n\nThey have begun moving it deeper into the kingdom.",
+
+                "I told them to stop.\n\nThey did not listen.\n\nI have begun to wonder if we truly found power...\n\nor if the power found us.",
+
+                "Tonight I walked through the barracks.\n\nOur soldiers were preparing for tomorrow.\n\nThey looked stronger than any army we have ever raised.",
+
+                "Yet none of them spoke.\n\nThey simply stood there.\n\nWatching the walls.",
+
+                "I asked one of them what he was looking at.\n\nHe said there was someone standing behind me.",
+
+                "I turned.\n\nThere was no one there.\n\nWhen I looked back at him...\n\nhe was gone.",
+
+                "I searched the entire barracks.\n\nNothing.\n\nNo footprints.\n\nNo blood.\n\nNothing.",
+
+                "I have ordered the lower chambers sealed.\n\nThe council has refused.\n\nThey say we need the power.",
+
+                "They say tomorrow's battle will decide the future of Ashenreach.\n\nPerhaps they are right.\n\nPerhaps I am simply afraid.",
+
+                "But I cannot shake the feeling that we are no longer alone.",
+
+                "Tomorrow, we march.\n\nIt will be the greatest battle this kingdom has ever seen.",
+
+                "I can feel it.\n\nSomething is going to happen.\n\nI do not know what.",
+
+                "But something is coming.\n\nPerhaps this war will finally end everything.\n\nPerhaps it will save us.\n\nI no longer know.",
+
+                "All I know is that we were too greedy.\n\nToo blind.\n\nWe wanted everything.",
+
+                "And now...\n\nI fear we may lose everything.",
+
+                "If anyone finds these pages after tomorrow...\n\nremember this.",
+
+                "Every action has a consequence.",
+
+                "And ours has finally come.",
+
+                "MY NOTES\n\nThat was the last entry.\n\nThere were no more pages after it.",
+
+                "The arena outside the ruins looks as though it may have once been part of the battlefield described in the book.\n\nBut I cannot prove it.",
+
+                "I searched the ruins for the lower chambers mentioned by the King.\n\nI found them.",
+
+                "The doors were still sealed.\n\nAt least...\n\nI believe they were.",
+
+                "There are marks around the entrance.\n\nSomething had tried to open them from the inside.",
+
+                "I found no body.\n\nNo weapon.\n\nNothing that tells me what happened.",
+
+                "But there was one thing.\n\nA symbol.\n\nThe same symbol I found beneath the older ruins.",
+
+                "I thought it belonged to the people who lived here before the kingdoms.\n\nI am no longer certain.",
+
+                "Whatever Ashenreach found...\n\nit was not theirs.",
+
+                "And somehow, the power they found still remains.\n\nI do not know what it is.",
+
+                "But after reading this...\n\nI am not sure I want to find out."
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

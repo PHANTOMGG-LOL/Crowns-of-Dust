@@ -1,0 +1,36 @@
+{
+  "min_y": -64,
+  "height": 384,
+  "logical_height": 384,
+
+  "coordinate_scale": 1.0,
+
+  "ambient_light": 0.0,
+
+  "has_skylight": false,
+  "has_ceiling": true,
+
+  "ultrawarm": false,
+  "natural": false,
+
+  "piglin_safe": true,
+
+  "bed_works": false,
+  "respawn_anchor_works": false,
+
+  "has_raids": false,
+  "has_ender_dragon_fight": false,
+
+  "monster_spawn_block_light_limit": 0,
+
+  "monster_spawn_light_level": {
+    "type": "minecraft:constant",
+    "value": 0
+  },
+
+  "infiniburn": "#minecraft:infiniburn_overworld",
+
+  "skybox": "end",
+
+  "cardinal_light_type": "default"
+}
