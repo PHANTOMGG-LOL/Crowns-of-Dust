@@ -62,6 +62,24 @@
     ]
   },
 
+  "whisper2": {
+    "sounds": [
+      "cod:whisper2"
+    ]
+  },
+
+  "whisper3": {
+    "sounds": [
+      "cod:whisper3"
+    ]
+  },
+
+  "whisper4": {
+    "sounds": [
+      "cod:whisper4"
+    ]
+  },
+
   "encounter.walking": {
     "sounds": [
       "cod:walking"

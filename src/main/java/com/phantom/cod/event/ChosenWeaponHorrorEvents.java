@@ -7,14 +7,16 @@ import com.phantom.cod.registry.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.protocol.game.ClientboundSoundPacket;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
@@ -55,7 +57,7 @@ import java.util.UUID;
  *      5 seconds
  *
  * Entity Encounter
- *      Entity appears 25-45 blocks away
+ *      Entity appears exactly 10 blocks away
  *      Entity remains for 10 seconds
  *      Looking at entity starts heartbeat
  *      Heartbeat lasts 5 seconds
@@ -65,7 +67,7 @@ import java.util.UUID;
  *
  * Every event happens after a random:
  *
- *      5 - 15 minutes
+ *      3 - 5 minutes
  *
  *
  * The weapon does NOT need to be held.
@@ -123,7 +125,7 @@ public final class ChosenWeaponHorrorEvents {
      * 15 minutes.
      */
     private static final int MAX_EVENT_INTERVAL =
-            10 * 60 * 20;
+            5 * 60 * 20;
 
 
     // ============================================================
@@ -155,11 +157,11 @@ public final class ChosenWeaponHorrorEvents {
     // ============================================================
 
     private static final int MIN_ENTITY_DISTANCE =
-            25;
+            10;
 
 
     private static final int MAX_ENTITY_DISTANCE =
-            45;
+            10;
 
 
     // ============================================================
@@ -353,7 +355,7 @@ public final class ChosenWeaponHorrorEvents {
 
 
         /*
-         * First event also waits 5-15 minutes.
+         * First event also waits 3-5 minutes.
          */
         state.ticksUntilNextEvent =
                 randomEventInterval(
@@ -543,9 +545,36 @@ public final class ChosenWeaponHorrorEvents {
             ServerPlayer player
     ) {
 
+        int selected =
+                player.level()
+                        .getRandom()
+                        .nextInt(4);
+
+
+        SoundEvent sound;
+
+        switch (selected) {
+
+            case 0 ->
+                    sound = ModSounds.WHISPER.get();
+
+            case 1 ->
+                    sound = ModSounds.WHISPER2.get();
+
+            case 2 ->
+                    sound = ModSounds.WHISPER3.get();
+
+            case 3 ->
+                    sound = ModSounds.WHISPER4.get();
+
+            default ->
+                    sound = ModSounds.WHISPER.get();
+        }
+
+
         playSoundToPlayer(
                 player,
-                ModSounds.WHISPER.get(),
+                sound,
                 0.8F,
                 0.9F
                         + player.level()
@@ -743,6 +772,40 @@ public final class ChosenWeaponHorrorEvents {
 
         state.heartbeatTicksRemaining =
                 0;
+
+
+        // ============================================================
+        // ENTITY APPEARANCE AMBIENT SOUND
+        // ============================================================
+
+        if (player.level()
+                .getRandom()
+                .nextBoolean()) {
+
+            playWalking(player);
+
+        } else {
+
+            playRunning(player);
+        }
+
+
+        // ============================================================
+        // RANDOM EFFECT DELAY
+        // ============================================================
+
+        /*
+         * The weapon-specific effect occurs once,
+         * randomly 2-5 seconds after the entity appears.
+         */
+        state.effectTriggered =
+                false;
+
+        state.effectDelay =
+                40
+                        + player.level()
+                        .getRandom()
+                        .nextInt(61);
     }
 
 
@@ -1022,6 +1085,25 @@ public final class ChosenWeaponHorrorEvents {
 
 
         // ========================================================
+        // WEAPON-SPECIFIC EFFECT
+        // ========================================================
+
+        if (!state.effectTriggered
+                && state.effectDelay > 0) {
+
+            state.effectDelay--;
+
+            if (state.effectDelay <= 0) {
+
+                triggerEncounterEffect(
+                        player,
+                        state
+                );
+            }
+        }
+
+
+        // ========================================================
         // LOOKING DETECTION
         // ========================================================
 
@@ -1090,6 +1172,196 @@ public final class ChosenWeaponHorrorEvents {
                     state
             );
         }
+    }
+
+
+    // ============================================================
+    // WEAPON-SPECIFIC ENCOUNTER EFFECT
+    // ============================================================
+
+    private static void triggerEncounterEffect(
+            ServerPlayer player,
+            HorrorState state
+    ) {
+
+        if (state.effectTriggered) {
+            return;
+        }
+
+
+        if (state.entity == null
+                || state.entity.isRemoved()) {
+
+            return;
+        }
+
+
+        state.effectTriggered =
+                true;
+
+
+        String weapon =
+                player.getPersistentData()
+                        .getStringOr(
+                                TAG_LAST_WEAPON,
+                                ""
+                        );
+
+
+        // ============================================================
+        // HEROBRINE'S LEGACY
+        // ============================================================
+
+        if (WEAPON_HEROBRINE.equals(weapon)) {
+
+            spawnEncounterLightning(
+                    player.level() instanceof ServerLevel level
+                            ? level
+                            : null,
+                    state.entity
+            );
+
+            return;
+        }
+
+
+        // ============================================================
+        // NULL'S SILENCE
+        // ============================================================
+
+        if (WEAPON_NULL.equals(weapon)) {
+
+            player.addEffect(
+                    new MobEffectInstance(
+                            MobEffects.BLINDNESS,
+                            3 * 20,
+                            0,
+                            false,
+                            false
+                    )
+            );
+        }
+    }
+
+
+    // ============================================================
+    // WORKING LIGHTNING SPAWN
+    // ============================================================
+
+    private static void spawnEncounterLightning(
+            ServerLevel level,
+            Entity entity
+    ) {
+
+        if (level == null
+                || entity == null
+                || entity.isRemoved()) {
+
+            return;
+        }
+
+
+        /*
+         * This is the same spawning pattern that already
+         * works in your ChoiceRoomManager.
+         */
+        EntityType<?> lightningType =
+                BuiltInRegistries.ENTITY_TYPE
+                        .getValue(
+                                Identifier.fromNamespaceAndPath(
+                                        "minecraft",
+                                        "lightning_bolt"
+                                )
+                        );
+
+
+        if (lightningType == null) {
+            return;
+        }
+
+
+        // ============================================================
+        // FIRST LIGHTNING
+        // ============================================================
+
+        spawnOneLightning(
+                level,
+                lightningType,
+                entity.getX(),
+                entity.getY(),
+                entity.getZ()
+        );
+
+
+        // ============================================================
+        // OPTIONAL EXTRA LIGHTNING
+        // ============================================================
+
+        /*
+         * A second nearby strike makes the appearance feel
+         * more supernatural, without making it a normal
+         * weather event.
+         */
+        if (level.getRandom().nextBoolean()) {
+
+            spawnOneLightning(
+                    level,
+                    lightningType,
+                    entity.getX()
+                            + (level.getRandom().nextDouble() * 4.0D - 2.0D),
+                    entity.getY(),
+                    entity.getZ()
+                            + (level.getRandom().nextDouble() * 4.0D - 2.0D)
+            );
+        }
+    }
+
+
+    // ============================================================
+    // SPAWN ONE LIGHTNING
+    // ============================================================
+
+    private static void spawnOneLightning(
+            ServerLevel level,
+            EntityType<?> lightningType,
+            double x,
+            double y,
+            double z
+    ) {
+
+        Entity spawned =
+                lightningType.spawn(
+                        level,
+                        BlockPos.containing(
+                                x,
+                                y,
+                                z
+                        ),
+                        EntitySpawnReason.TRIGGERED
+                );
+
+
+        if (!(spawned
+                instanceof LightningBolt lightning)) {
+
+            return;
+        }
+
+
+        // Exact position.
+        lightning.setPos(
+                x,
+                y,
+                z
+        );
+
+
+        /*
+         * Same API used by your working Choice Room code:
+         * visual-only lightning, so it does not behave like
+         * a normal weather strike.
+         */
+        lightning.setVisualOnly(true);
     }
 
 
@@ -1273,12 +1545,18 @@ public final class ChosenWeaponHorrorEvents {
         state.heartbeatTicksRemaining =
                 0;
 
+        state.effectTriggered =
+                false;
+
+        state.effectDelay =
+                0;
+
 
         /*
          * --------------------------------------------------------
          * NEXT EVENT:
          *
-         * RANDOM 5-15 MINUTES.
+         * RANDOM 3-5 MINUTES.
          * --------------------------------------------------------
          */
         state.ticksUntilNextEvent =
@@ -1311,11 +1589,17 @@ public final class ChosenWeaponHorrorEvents {
 
         state.activeEvent =
                 null;
+
+        state.effectTriggered =
+                false;
+
+        state.effectDelay =
+                0;
     }
 
 
     // ============================================================
-    // RANDOM 5-15 MINUTES
+    // RANDOM 3-5 MINUTES
     // ============================================================
 
     private static int randomEventInterval(
@@ -1350,5 +1634,13 @@ public final class ChosenWeaponHorrorEvents {
         boolean heartbeatStarted;
 
         int heartbeatTicksRemaining;
+
+        // ----------------------------------------------------------
+        // Weapon-specific encounter effect
+        // ----------------------------------------------------------
+
+        boolean effectTriggered;
+
+        int effectDelay;
     }
 }

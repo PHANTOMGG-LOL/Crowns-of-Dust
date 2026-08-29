@@ -1518,13 +1518,53 @@ public final class ChoiceRoomManager {
             return;
         }
 
+        BlockPos pos =
+                player.blockPosition();
+
+        float pitch =
+                0.85F + level.getRandom().nextFloat() * 0.25F;
+
+        float volume =
+                0.65F;
+
+        // ==============================================
+        // ALL FOUR VOICES AT THE SAME TIME
+        // ==============================================
+
         level.playSound(
                 null,
-                player.blockPosition(),
+                pos,
                 ModSounds.WHISPER.get(),
                 net.minecraft.sounds.SoundSource.AMBIENT,
-                0.65F,
-                0.85F + level.getRandom().nextFloat() * 0.25F
+                volume,
+                pitch
+        );
+
+        level.playSound(
+                null,
+                pos,
+                ModSounds.WHISPER2.get(),
+                net.minecraft.sounds.SoundSource.AMBIENT,
+                volume,
+                pitch
+        );
+
+        level.playSound(
+                null,
+                pos,
+                ModSounds.WHISPER3.get(),
+                net.minecraft.sounds.SoundSource.AMBIENT,
+                volume,
+                pitch
+        );
+
+        level.playSound(
+                null,
+                pos,
+                ModSounds.WHISPER4.get(),
+                net.minecraft.sounds.SoundSource.AMBIENT,
+                volume,
+                pitch
         );
     }
 

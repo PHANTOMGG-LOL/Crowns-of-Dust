@@ -116,6 +116,24 @@ public class ModSounds {
                     SoundEvent::createVariableRangeEvent
             );
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> WHISPER2 =
+            SOUND_EVENTS.register(
+                    "whisper2",
+                    SoundEvent::createVariableRangeEvent
+            );
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> WHISPER3 =
+            SOUND_EVENTS.register(
+                    "whisper3",
+                    SoundEvent::createVariableRangeEvent
+            );
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> WHISPER4 =
+            SOUND_EVENTS.register(
+                    "whisper4",
+                    SoundEvent::createVariableRangeEvent
+            );
+
     // --------------------------------------------------
     // Walking Footsteps
     // --------------------------------------------------
